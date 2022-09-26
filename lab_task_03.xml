@@ -3,6 +3,7 @@
     <employee id = "1">
         <name>John Doe</name>
     <address>
+        <flat></flat>
         <house>H# 38</house>
         <road>R#3</road>
         <area>Banani</area>
@@ -20,6 +21,7 @@
     <employee id = "3">
         <name>Ala Voski</name>
      <address>
+        <flat></flat>
         <house>H# 38</house>
         <road>R#3</road>
         <area>Motijheel</area>
