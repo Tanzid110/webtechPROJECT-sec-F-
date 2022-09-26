@@ -9,6 +9,7 @@
         <area>Banani</area>
         <district>Dhaka</district>
      </address>
+   </employee>
     <employee id = "2">
         <name>Mark Zuckerberg</name>
      <address>
@@ -17,7 +18,8 @@
         <road>R#18</road>
         <area>mirpur</area>
         <district>Dhaka</district>
-    </address>
+     </address>
+   </employee>
     <employee id = "3">
         <name>Ala Voski</name>
      <address>
@@ -25,6 +27,7 @@
         <house>H# 38</house>
         <road>R#3</road>
         <area>Motijheel</area>
-     </address>  
+     </address>
+   </employee>  
        
 </employees>      
