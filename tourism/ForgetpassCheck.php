@@ -3,6 +3,7 @@
 session_start();
 $username = $_POST['username'];
 $password = $_POST['password'];
+$RetyNpepass = $_POST['RetyNpepass'];
 
 if($username == "" || $password == ""){
     header('location:login.php?err=null');
@@ -17,6 +18,8 @@ if($username == "" || $password == ""){
             
             if(trim($users[0]) == $username && trim($users[1]) == $password ){
                 setcookie('status', 'true', time()+3600, '/');
+                $users[0]=$username;
+                $users[1]=$RetyNpepass;
                 $status =true;
             }
          
@@ -31,6 +34,8 @@ if($username == "" || $password == ""){
         
         if(trim($users[0]) == $username && trim($users[1]) == $password )
         setcookie('status', 'true', time()+3600, '/');
+                $users[0]=$username;
+                $users[1]=$RetyNpepass;
         $status =true;
     }
     if($status){   

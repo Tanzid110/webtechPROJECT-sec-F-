@@ -24,7 +24,7 @@
 <body>
     <form method="post" action="signupCheck.php" enctype="">
         <fieldset>
-            <legend align= "center"><h1>SIGNUP</h1></legend>
+            <legend align= "center"><h1 style="color:brown">SIGNUP</h1></legend>
             <table align= "center">
                 <tr>
                     <td>USERNAME</td>
@@ -65,6 +65,10 @@
                         <input type="reset" name="" value="Reset"/>
                     </td>
                 </tr>
+
+         <li text align="right">
+            <a href="login.php"> <b> <i> GO TO LOGIN </i> </b></a>
+         </li>
             </table>
         </fieldset>
     </form>
