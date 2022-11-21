@@ -2,16 +2,16 @@
 
     if(isset($_GET['err'])){
         if($_GET['err'] == 'null'){
-            echo "invalid username/password";
+            echo "PLEASE INSERT SOME DATA FIRST";
         }
 
-        if($_GET['err'] == 'invalid'){
-            echo "username/password not found ...";
-        }
+        // if($_GET['err'] == 'invalid'){
+        //     echo "username/password not found ...";
+        // }
 
-        if($_GET['err'] == 'bad_request'){
-            echo "please login first ...";
-        }
+        // if($_GET['err'] == 'bad_request'){
+        //     echo "please login first ...";
+        // }
     }
 
 ?>
@@ -22,10 +22,13 @@
     <title>signup</title>
 </head>
 <body>
-    <form method="post" action="signupCheck.php" enctype="">
+    <form method="post" action="../controllers/signupCheck.php" enctype="">
         <fieldset>
-            <legend align= "center"><h1 style="color:brown">SIGNUP</h1></legend>
+            <legend align= "center"><h2>SIGNUP</h2></legend>
             <table align= "center">
+            <h1 align= "center">REGISTRATION</h1>
+                   <p align= "center"><b>Please fill in this form to create an account.</b></p>
+                      <hr>
                 <tr>
                     <td>USERNAME</td>
                     <td><input type="text" name="username" value="" placeholder="username" /></td>
@@ -34,13 +37,14 @@
                     <td>EMAIL</td>
                     <td><input type="email" name="email" value="" placeholder="email" /></td>
                 </tr>
-                <tr>
-                    <td>PHONE</td>
-                    <td><input type="number" name="number" value="" placeholder="phone" /></td>
-                </tr>
+
                 <tr>
                     <td>PASSWORD</td>
                     <td><input type="password" name="password" value="" placeholder="password" /></td>
+                </tr>
+                <tr>
+                    <td>PHONE</td>
+                    <td><input type="number" name="number" value="" placeholder="number" /></td>
                 </tr>
                 <tr>
                     <td>DATE OF BIRTH</td>
@@ -65,10 +69,9 @@
                         <input type="reset" name="" value="Reset"/>
                     </td>
                 </tr>
-
-         <li text align="right">
-            <a href="login.php"> <b> <i> GO TO LOGIN </i> </b></a>
-         </li>
+                <tr>
+                    <td><hr><p>want to sign in? <a href="login.php">Sign in</a>.</p></td>
+                </tr>
             </table>
         </fieldset>
     </form>

@@ -7,7 +7,7 @@
 	if($username == null || $password == null){
 		echo "null email/password";
 	}else{
-		$file = fopen('user.txt', 'r');
+		$file = fopen('../user.txt', 'r');
 		
 		while (!feof($file)) {
 			$data=fgets($file);
@@ -16,7 +16,7 @@
 				$_SESSION['status'] = true;
 				setcookie('status', 'true', time()+3600, '/');
                 $status=true;
-				header('location: login.php');
+				header('location: ../veiws/login.php');
 			}
 		}
 		echo "invalid user";
